@@ -1,45 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DATA BASE MDTU</title>
-  <link rel="icon" href="https://iili.io/nMke4UJ.jpg" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi MDT FKDT Salawu</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
+      width: 100%;
+      height: 100%;
       margin: 0;
       padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #eee;
-      overflow: hidden; /* Mencegah scroll ganda */
     }
 
-    .iframe-container {
-      width: 100%;
-      height: 100dvh; /* Menggunakan dvh agar pas di mobile browser */
-      overflow: hidden;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f6f4;
     }
 
-    iframe {
+    .app-frame {
       display: block;
       width: 100%;
-      height: 100%;
-      border: none;
+      height: 100vh;
+      height: 100dvh;
+      border: 0;
+      background: white;
     }
   </style>
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe
-      id="app"
-      src="https://script.google.com/macros/s/AKfycbyhv1tyOz8KWlk00Apfl4bGl_INEKYmOo5V8_idMMrDFHwl8nhup9qD8knM5Pw2kbOW/exec"
-      scrolling="yes"
-      allowfullscreen="true"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allow="fullscreen; camera; microphone; display-capture; geolocation;">
-    </iframe>
-  </div>
+
+  <iframe
+    class="app-frame"
+    src="https://script.google.com/macros/s/AKfycbyhv1tyOz8KWlk00Apfl4bGl_INEKYmOo5V8_idMMrDFHwl8nhup9qD8knM5Pw2kbOW/exec"
+    title="Aplikasi MDT FKDT Salawu"
+    allow="clipboard-read; clipboard-write">
+  </iframe>
+
 </body>
 </html>
